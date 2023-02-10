@@ -1,13 +1,17 @@
 body {
-    background-color: rgb(23, 20, 34);
+    background-color: rgb(5, 0, 22);
     color: white;
 }
 
+
+/* Sección Menú*/
 .menu {
+    font-family: 'Bowlby One', cursive;
     display: grid;
-    grid-template-columns: 10% 30% 1fr 10%;
-    border-bottom: solid 4px rgb(180, 2, 180);
+    grid-template-columns: 5% 30% 1fr 5%;
+    border-bottom: solid 4px rgb(6, 157, 218);
     font-size: 1.4em;
+    height: 4em;
 }
 
 .menu__header__logo {
@@ -32,8 +36,64 @@ body {
 .menu__header__ul {
     display: flex;
     justify-content: space-around;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-weight: 600;
 }
 
 .menu__header__ul__item {
-    margin: 5px;
+    margin: 10px;
+}
+
+/* Sección Principal*/
+
+.main {
+    box-sizing: border-box;
+    height: 85vh;
+    padding: 2%;
+    font-family: 'Bowlby One', cursive;
+}
+
+.main__tittle {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_edwar {
+    font-size: 9rem;
+    color: rgb(228, 195, 11);
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+}
+
+.main_leon {
+    background-color: rgb(228, 195, 11);
+    padding-top: 2.5rem;
+    color: rgb(5, 0, 22);
+    font-size: 12.2rem;
+    align-self: center;
+}
+
+.main_description {
+    color: rgb(228, 195, 11);
+    font-size: 2.65rem;
+    align-self: center;
+}
+
+.main__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__subtittle {
+    color: rgb(6, 157, 218);
+    align-self: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Sección Sobre Mi*/
+
+.about {
+    background-color: green;
 }
