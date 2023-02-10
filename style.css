@@ -8,7 +8,7 @@ body {
 .menu {
     font-family: 'Bowlby One', cursive;
     display: grid;
-    grid-template-columns: 5% 30% 1fr 5%;
+    grid-template-columns: 2% 30% 1fr 2%;
     border-bottom: solid 4px rgb(6, 157, 218);
     font-size: 1.4em;
     height: 4em;
@@ -96,4 +96,17 @@ body {
 
 .about {
     background-color: green;
+    font-family: 'Noto Sans Tangsa', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+}
+
+.about__div {
+    grid-column: 2;
+}
+
+.about__h3 {
+    font-size: 3rem;
 }
