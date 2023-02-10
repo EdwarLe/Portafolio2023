@@ -7,7 +7,7 @@ body {
     display: grid;
     grid-template-columns: 10% 30% 1fr 10%;
     border-bottom: solid 4px rgb(180, 2, 180);
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 
 .menu__header__logo {
@@ -23,5 +23,17 @@ body {
 }
 
 .menu__header__list {
-    grid-column: ;
+    grid-column: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__header__ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__header__ul__item {
+    margin: 5px;
 }
