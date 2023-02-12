@@ -146,5 +146,55 @@ body {
     font-weight: 400;
 }
 
-/* Sección Skills/*
+/* Sección Skills */
 
+.skills {
+ background: rgb(83, 2, 63);
+ height: 300px;
+ font-family: 'Quicksand', sans-serif;
+ display: grid;
+ grid-template-rows: 30% 1fr;
+ justify-content: center;
+ align-items: center;
+}
+
+.skills__tittle {
+    font-family: 'Bowlby One', cursive;
+    font-size: 3rem;
+    text-align: center;
+    height: auto;
+}
+
+.skills__animBox {
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.skills__animBox1 {
+    filter: hue-rotate(80deg) saturate(100%) brightness(400%);
+}
+
+.skills__animText {
+    animation: slide 10s infinite ;
+}
+
+
+@keyframes slide {
+    0% { margin-top: 0;}
+    20% { margin-top: 0;}
+
+    25% { margin-top: -50px;}
+    45% {margin-top: -50px;}
+
+    50% { margin-top: -100px;}
+    70% {margin-top: -100px;}
+
+    75% { margin-top: -150px;}
+    95% {margin-top: -150px;}
+}
