@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,10 +17,16 @@
 </head>
 
 <body>
+    <!-- Botón arriba -->
+    <div class="btn-up" id="btn_up">
+        <i class="icon-angle-circled-up"></i>
+    </div>
+
+
     <!-- Menú -->
-    <section class="menu">
+    <section class="menu" id="home">
         <header class="menu__header__logo">
-            <img class="menu__logo" src="imgs/eyeglasses.png" alt="">
+            <img class="menu__logo" src="assets/eyeglasses.png" alt="">
             <h3>Edwar León</h3>
         </header>
         <nav class="menu__nav">
@@ -71,51 +78,53 @@
     </section>
 
     <!-- Skills-->
-    <section class="skills" id="skills">
-        <h3 class="skills__tittle">Skills</h3>
-        <div>
-            <div class="skills__animBox skills__animBox1">
-                <ul class="skills__animText">
-                    <li><img src="imgs/htlm.png" alt=""></li>
+    <section class="skills__main" id="skills">
+        <div class="skills">
+            <h3 class="skills__tittle">Skills</h3>
+            <div>
+                <div class="skills__animBox skills__animBox1">
+                    <ul class="skills__animText">
+                        <li><img src="assets/htlm.png" alt=""></li>
 
-                    <li><img src="imgs/js_icon.png" alt=""></li>
+                        <li><img src="assets/js_icon.png" alt=""></li>
 
-                    <li><img src="imgs/nodejs_icon.png" alt=""></li>
+                        <li><img src="assets/nodejs_icon.png" alt=""></li>
 
-                    <li><img src="imgs/css_icon.png" alt=""></li>
-                </ul>
-            </div>
-            <div class="skills__animBox">
-                <ul class="skills__animText">
-                    <li>HTML 5</li>
+                        <li><img src="assets/css_icon.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="skills__animBox">
+                    <ul class="skills__animText">
+                        <li>HTML 5</li>
 
-                    <li>JAVASCRIPT</li>
+                        <li>JAVASCRIPT</li>
 
-                    <li>NODE JS</li>
+                        <li>NODE JS</li>
 
-                    <li>CSS</li>
-                </ul>
+                        <li>CSS</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Formación académica -->
-    <section  id="formacion">
-        
-            <div>
-                <ul class="estudios">
-                    <li>
-                        <h2 class="estudios__tittle__main">Formación académica</h2>
-                    </li>
-                    <li class="estudios__img"><img src="imgs/alura_logo.png" alt=""></li>
-                    <li>
-                        <h4 class="estudios__tittle">Junior Dev Full Stack</h4>
-                    </li>
-                    <li>
-                        <p class="estudios__parr">2022 - Alura</p>
-                    </li>
-                </ul>
-            </div>
+    <section id="formacion">
+
+        <div>
+            <ul class="estudios">
+                <li>
+                    <h2 class="estudios__tittle__main">Formación académica</h2>
+                </li>
+                <li class="estudios__img"><img src="assets/alura_logo.png" alt=""></li>
+                <li>
+                    <h4 class="estudios__tittle">Junior Dev Full Stack</h4>
+                </li>
+                <li>
+                    <p class="estudios__parr">2022 - Alura</p>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Experiencia Profesional-->
@@ -124,26 +133,15 @@
             <h2 class="experiencia__tittle">Experiencia Profesional</h2>
             <div class="proyectos">
 
-                <div class="experiencia__container__unit">
-                    <img src="imgs/encriptador.PNG" alt="">
+                <a href="https://edwarle.github.io/Encriptador/" class="experiencia__container__unit">
+                    <img src="assets/encriptador.PNG" alt="">
                     <div>
                         <h2>Encriptador de texto</h2>
-                        <h3>Challenge Oracle - Alura</h3>
-                        <div>
-                            <span>
-                                <a href=""></a>
-                                <button>Repositório</button>
-                            </span>
-                            <span>
-                                <a href=""></a>
-                                <button>Ver demo</button>
-                            </span>
-                        </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="experiencia__container__unit">
-                    <img src="imgs/ahorcado.PNG" alt="">
+                    <img src="assets/ahorcado.PNG" alt="">
                     <div>
                         <h2>Juego del Ahorcado</h2>
                         <h3>Challenge Oracle - Alura</h3>
@@ -161,7 +159,7 @@
                 </div>
 
                 <div class="experiencia__container__unit">
-                    <img src="imgs/to-do-list.PNG" alt="">
+                    <img src="assets/to-do-list.PNG" alt="">
                     <div>
                         <h2>To do List</h2>
                         <h3>Challenge Oracle - Alura</h3>
@@ -179,7 +177,7 @@
                 </div>
 
                 <div class="experiencia__container__unit">
-                    <img src="imgs/form.PNG" alt="">
+                    <img src="assets/form.PNG" alt="">
                     <div>
                         <h2>Formulario de Registro</h2>
                         <h3>Challenge Oracle - Alura</h3>
@@ -200,13 +198,14 @@
     </section>
 
     <!-- Footer -->
-
     <section class="footer">
         <div>
             <p>Desarrollado por Edwar León</p>
             <p>2023</p>
         </div>
     </section>
+
+    <script src="goTop.js"></script>
 </body>
 
 </html>
