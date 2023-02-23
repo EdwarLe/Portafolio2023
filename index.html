@@ -22,19 +22,19 @@
             <img class="menu__logo" src="imgs/eyeglasses.png" alt="">
             <h3>Edwar León</h3>
         </header>
-        <nav class>
+        <nav class="menu__nav">
             <ul class="menu__header__ul">
                 <li class="menu__header__ul__item">
-                    Sobre mi
+                    <a href="#aboutMe">Sobre mi</a>
                 </li>
                 <li class="menu__header__ul__item">
-                    Skills
+                    <a href="#skills">Skills</a>
                 </li>
                 <li class="menu__header__ul__item">
-                    Formación
+                    <a href="#formacion">Formación</a>
                 </li>
                 <li class="menu__header__ul__item">
-                    Proyectos
+                    <a href="#experiencia">Proyectos</a>
                 </li>
             </ul>
         </nav>
@@ -53,9 +53,12 @@
     </section>
 
     <!-- Sobre mi -->
-    <section class="about">
+    <section class="about" id="aboutMe">
         <div class="about__div">
             <h3 class="about__h3">¿Quién es Edwar?</h3>
+            <div class="about__img">
+                <img src="" alt="">
+            </div>
             <div class="about__info">
                 <p class="about__p1">Soy un joven apasionado por la programación y la enseñanza, en mis años laborales
                     me he desempeñado mayormente como Sales Coach, emprendedor con muchas ideas y con ganas de aprender
@@ -64,14 +67,11 @@
                     pueda absorver de mis proyectos y conocimiento, desempeñarme en una empresa multinacional donde
                     aprenda y crezca continuamente.</p>
             </div>
-            <div class="about__img">
-                <img src="" alt="">
-            </div>
         </div>
     </section>
 
     <!-- Skills-->
-    <section class="skills">
+    <section class="skills" id="skills">
         <h3 class="skills__tittle">Skills</h3>
         <div>
             <div class="skills__animBox skills__animBox1">
@@ -100,11 +100,13 @@
     </section>
 
     <!-- Formación académica -->
-    <section class="estudios">
-        <h2>Formación académica</h2>
-        <div>
+    <section  id="formacion">
+        
             <div>
-                <ul>
+                <ul class="estudios">
+                    <li>
+                        <h2 class="estudios__tittle__main">Formación académica</h2>
+                    </li>
                     <li class="estudios__img"><img src="imgs/alura_logo.png" alt=""></li>
                     <li>
                         <h4 class="estudios__tittle">Junior Dev Full Stack</h4>
@@ -114,81 +116,83 @@
                     </li>
                 </ul>
             </div>
-        </div>
     </section>
 
     <!-- Experiencia Profesional-->
-    <section class="experiencia">
-        <div class="experiencia__container">
-            <h2>Experiencia Profesional</h2>
-            <div class="experiencia__container__unit">
-                <img src="" alt="">
-                <div>
-                    <h2>Encriptador de texto</h2>
-                    <h3>Challenge Oracle - Alura Codificador</h3>
+    <section class="experiencia" id="experiencia">
+        <div class="experiencia__container__main">
+            <h2 class="experiencia__tittle">Experiencia Profesional</h2>
+            <div class="proyectos">
+
+                <div class="experiencia__container__unit">
+                    <img src="imgs/encriptador.PNG" alt="">
                     <div>
-                        <span>
-                            <a href=""></a>
-                            <button>Repositório</button>
-                        </span>
-                        <span>
-                            <a href=""></a>
-                            <button>Ver demo</button>
-                        </span>
+                        <h2>Encriptador de texto</h2>
+                        <h3>Challenge Oracle - Alura</h3>
+                        <div>
+                            <span>
+                                <a href=""></a>
+                                <button>Repositório</button>
+                            </span>
+                            <span>
+                                <a href=""></a>
+                                <button>Ver demo</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h2>Juego del Ahorcado</h2>
-                    <h3>Challenge Oracle - Alura</h3>
+                <div class="experiencia__container__unit">
+                    <img src="imgs/ahorcado.PNG" alt="">
                     <div>
-                        <span>
-                            <a href=""></a>
-                            <button>Repositório</button>
-                        </span>
-                        <span>
-                            <a href=""></a>
-                            <button>Ver demo</button>
-                        </span>
+                        <h2>Juego del Ahorcado</h2>
+                        <h3>Challenge Oracle - Alura</h3>
+                        <div>
+                            <span>
+                                <a href=""></a>
+                                <button>Repositório</button>
+                            </span>
+                            <span>
+                                <a href=""></a>
+                                <button>Ver demo</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h2>To do List</h2>
-                    <h3>Challenge Oracle - Alura</h3>
+                <div class="experiencia__container__unit">
+                    <img src="imgs/to-do-list.PNG" alt="">
                     <div>
-                        <span>
-                            <a href=""></a>
-                            <button>Repositório</button>
-                        </span>
-                        <span>
-                            <a href=""></a>
-                            <button>Ver demo</button>
-                        </span>
+                        <h2>To do List</h2>
+                        <h3>Challenge Oracle - Alura</h3>
+                        <div>
+                            <span>
+                                <a href=""></a>
+                                <button>Repositório</button>
+                            </span>
+                            <span>
+                                <a href=""></a>
+                                <button>Ver demo</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h2>Formulario de Registro</h2>
-                    <h3>Challenge Oracle - Alura</h3>
+                <div class="experiencia__container__unit">
+                    <img src="imgs/form.PNG" alt="">
                     <div>
-                        <span>
-                            <a href=""></a>
-                            <button>Repositório</button>
-                        </span>
-                        <span>
-                            <a href=""></a>
-                            <button>Ver demo</button>
-                        </span>
+                        <h2>Formulario de Registro</h2>
+                        <h3>Challenge Oracle - Alura</h3>
+                        <div>
+                            <span>
+                                <a href=""></a>
+                                <button>Repositório</button>
+                            </span>
+                            <span>
+                                <a href=""></a>
+                                <button>Ver demo</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +201,7 @@
 
     <!-- Footer -->
 
-    <section>
+    <section class="footer">
         <div>
             <p>Desarrollado por Edwar León</p>
             <p>2023</p>
