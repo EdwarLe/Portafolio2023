@@ -216,7 +216,7 @@ body {
 }
 
 .skills__animText {
-    animation: slide 10s infinite ;
+    animation: slide 5s infinite ;
 }
 
 /* Seccion Estudios */
@@ -332,7 +332,6 @@ body {
 }
 
 
-
 /* botón arriba */
 
 .btn-up {
@@ -380,11 +379,50 @@ body {
 .loader {
     width: 100vw;
     height: 100vh;
-    background: green;
-    position: absolute;
+    background: rgb(228, 195, 11);
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 0.8s ease-in-out;
 }
+
+.loader2 {
+    clip-path: circle(0 at 100% 100%);
+}
+
+.loader > div:nth-child(1) {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(5, 0, 22);
+    margin: .5rem;
+    border-radius: 50%;
+    animation: load 0.8s linear infinite;
+}
+
+.loader > div:nth-child(2) {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(5, 0, 22);
+    margin: .5rem;
+    border-radius: 50%;
+    animation: load 0.7s linear infinite;
+}
+
+.loader > div:nth-child(3) {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(5, 0, 22);
+    margin: .5rem;
+    border-radius: 50%;
+    animation: load 0.6s linear infinite;
+}
+
 @keyframes slide {
     0% { margin-top: 0;}
     20% { margin-top: 0;}
@@ -398,3 +436,15 @@ body {
     75% { margin-top: -150px;}
     95% {margin-top: -150px;}
 }
+
+@keyframes load {
+    0% {margin-top: 0; transform: scale(1)}
+    33% {margin-top: -20px;}
+    66% {margin-top: -40px;}
+    100% {margin-top: 0; transform: scale(0)}
+}
+
+/*
+@media (min-width: 768px) {
+
+}*/

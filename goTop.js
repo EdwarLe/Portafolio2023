@@ -1,5 +1,9 @@
 const btnScrollTop = document.getElementById ("btn_up")
 
+window.addEventListener('load', () => {
+    document.getElementById("loader").classList.toggle("loader2")
+})
+
 btnScrollTop.addEventListener('click', () => {
     window.scrollTo(0, 0)
 });
