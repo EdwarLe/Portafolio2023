@@ -326,7 +326,7 @@ body {
 /* Pie de página */
 
 .footer {
-    background-color: darkslategrey;
+    background-color: rgb(5, 1, 17);
     height: 90px;
     text-align: center;
     display: flex;
@@ -334,6 +334,7 @@ body {
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     line-height: 30px;
+    width: 100vw;
 }
 
 
@@ -451,7 +452,7 @@ body {
 
 
 @media (max-width: 768px) {
-    .main, .about, .skills__main, .estudios, .experiencia, .footer {
+    .main, .about, .skills__main, .estudios, .experiencia, {
         margin: 0 1em;
         max-width: 100vw;
     }
