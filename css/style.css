@@ -124,7 +124,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    height: 100vh;
+    height: auto;
     display: grid;
     padding-top: 7em;
     grid-template-columns: 5% 1fr 5%;
@@ -134,13 +134,12 @@ body {
 .about__div {
     grid-template-areas: 'titulo titulo'
     'imagen parrafo1';
-    margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 35% 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3em 1fr;
     grid-column: 2;
-    height: 90px;
+    height: auto;
 }
 
 .about__info {
@@ -150,6 +149,13 @@ body {
 
 .about__img {
     grid-area: imagen;
+    align-self: center;
+    justify-self: center;
+}
+
+.about__img img {
+    border-radius: 50% 50%;
+    width: 10em;
 }
 
 .about__h3 {
@@ -176,7 +182,7 @@ body {
 /* Sección Skills */
 
 .skills__main {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,16 +229,15 @@ body {
 /* Seccion Estudios */
 
 .estudios {
-    height: 100vh;
+    height: auto;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
-    padding-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid rgb(29, 29, 29);
-    padding-top: 7em;
+    padding-top: 3em;
 }
 
 .estudios__tittle__main {
@@ -251,7 +256,7 @@ body {
 
 .estudios__tittle, .estudios__parr {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
 }
 
 
@@ -447,10 +452,9 @@ body {
 
 
 @media (min-width: 768px) {
-    .menu, .main, .about, .skills__main, .estudios, .experiencia, .footer, {
+    .menu, .main, .about, .skills__main, .estudios, .experiencia, .footer {
         max-width: 100vw;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin: 0 1em
     }
 
     .loader {
@@ -461,7 +465,73 @@ body {
         text-align: center;
     }
 
-    .menu__header__ul {
+    .proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .main, .about, .estudios {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        padding-top: 1em;
+        height: 20em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__div {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 412px) {
+    .menu, .main, .about, .skills__main, .estudios, .experiencia, .footer {
+        max-width: 100vw;
+        margin: 0 1em
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .menu__header__logo {
+        gap: 2em;
+    }
+
+    .loader {
+        max-width: 100vw;
+    }
+
+    .main__subtittle {
+        text-align: center;
+    }
+
+    .proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main, .about, .estudios {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        padding-top: 1em;
+        height: 20em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__div {
+        margin-top: auto;
     }
 }
