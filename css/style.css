@@ -17,11 +17,18 @@ body {
     color: rgb(6, 157, 218);
 }
 
+.main__container {
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
 /* Sección Menú*/
 .menu {
     font-family: 'Bowlby One', cursive;
     position: fixed;
-    width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
     z-index: 100;
     background: rgb(5, 0, 22);
     display: grid;
@@ -104,7 +111,9 @@ body {
 
 .main {
     height: 85vh;
-    padding: 2%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2% 0;
     padding-top: 7em;
     font-family: 'Bowlby One', cursive;
     border-bottom: 1px solid rgb(29, 29, 29);
@@ -153,9 +162,11 @@ body {
 
 .about {
     font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
     font-weight: 600;
     font-size: 1.5rem;
     height: auto;
+    width: 100%;
     display: grid;
     padding-top: 7em;
     grid-template-columns: 5% 1fr 5%;
@@ -214,6 +225,8 @@ body {
 
 .skills__main {
     height: auto;
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,6 +274,8 @@ body {
 
 .estudios {
     height: auto;
+    width: 100%;
+    box-sizing: border-box;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
@@ -295,6 +310,8 @@ body {
 
 .experiencia {
     height: auto;
+    width: 100%;
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
@@ -312,7 +329,7 @@ body {
 }
 
 .experiencia__container__unit {
-    margin: 25px;
+    margin: 25px 0 25px 25px;
     background: rgb(83, 2, 63);
     padding: 25px;
     border-radius: 5px;
@@ -365,7 +382,8 @@ body {
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     line-height: 30px;
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
