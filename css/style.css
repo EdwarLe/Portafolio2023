@@ -264,7 +264,7 @@ body {
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid rgb(29, 29, 29);
-    padding-top: 3em;
+    padding-top: 5em;
 }
 
 .estudios__tittle__main {
@@ -294,7 +294,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    padding-top: 5%;
+    padding-top: 5em;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
 }
