@@ -13,9 +13,10 @@ btnScrollTop.addEventListener('click', () => {
 });
 
 window.onscroll = () => {
-    addBtnScroll()
-    hideMenu()
-    showMenuPlegable()
+    addBtnScroll();
+    hideMenu();
+    showMenuPlegable();
+    showUnderLineMenu()
 }
 
 const addBtnScroll = () => {
@@ -43,5 +44,14 @@ const hideMenu = () => {
         menuOculto.classList.add('hide')
     } else {
         menuOculto.classList.remove('hide')
+    }
+}
+
+
+const showUnderLineMenu = () => {
+    if (window.scrollY > 100) {
+        menuOculto.classList.add('hide__underline')
+    } else {
+        menuOculto.classList.remove('hide__underline')
     }
 }

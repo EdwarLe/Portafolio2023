@@ -26,10 +26,14 @@ body {
     background: rgb(5, 0, 22);
     display: grid;
     grid-template-columns: 2% 30% 1fr 2%;
-    border-bottom: solid 2px rgb(6, 157, 218);
     font-size: 1.4em;
     height: 4em;
-    transition: .2s;
+    transition: 0.2s;
+}
+
+.hide__underline {
+    border-bottom: solid 2px rgb(6, 157, 218);
+    transition: 0.5s;
 }
 
 
