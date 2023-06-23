@@ -7,10 +7,32 @@ html {
     scroll-padding-top: 5rem;
 }
 
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(5, 0, 22);
+}
+
+html::-webkit-scrollbar:vertical {
+width: 0.5rem;
+}
+
+html::-webkit-scrollbar:horizontal {
+    height: 0.5rem;
+    }
+
+ html::-webkit-scrollbar-thumb {
+    background-color: rgb(228, 195, 11);
+    border-radius: 0.2rem;
+    border: 3px solid rgb(228, 195, 11);
+ }
+
 .main__container {
     position: relative;
-    width: 100vw;
-
+    max-width: 100vw;
+    width: 100%;
     background-color: rgb(5, 0, 22);
     color: white;
 }
@@ -130,64 +152,94 @@ html {
 
 .about {
     font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
     font-weight: 600;
     font-size: 1.5rem;
-    height: auto;
     width: 100%;
-    display: grid;
-    padding-top: 7em;
-    grid-template-columns: 5% 1fr 5%;
+    height: calc(100vh - 5rem);
     border-bottom: 1px solid rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    padding: 0 1rem;
 }
 
 .about__div {
-    grid-template-areas: 'titulo titulo'
-    'imagen parrafo1';
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 35% 1fr;
-    grid-template-rows: 3em 1fr;
-    grid-column: 2;
-    height: auto;
-}
-
-.about__info {
-    grid-area: parrafo1;
-    font-size: 1.2rem;
-}
-
-.about__img {
-    grid-area: imagen;
-    align-self: center;
-    justify-self: center;
-}
-
-.about__img img {
-    border-radius: 50% 50%;
-    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .about__h3 {
     font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-    grid-area: titulo;
 }
 
-.about__p1 {
-    margin: 20px;
-    line-height: 120%;
-    text-align: center;
-    font-weight: 400;
+.container__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
 }
 
-.about__p2 {
-    margin: 20px;
-    line-height: 120%;
-    text-align: center;
-    font-weight: 400;
+.about__img img{
+    border-radius: 50%;
+    height: 20rem;
 }
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.about__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.about__text p {
+    width: 100%;
+    text-align: justify;
+}
+ .about__p2, .about__p3, .about__p4, .about__p5, .about__p6 {
+    transform: translateX(110%);
+    display: none;
+ }
+
+ .about__p{
+    font-weight: lighter;
+    line-height: 1.7rem;
+ }
+
+ .num__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .num__select p{
+    background-color: white;
+    color: rgb(5, 0, 22);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 50%;
+ }
+
 
 /* Sección Skills */
 
