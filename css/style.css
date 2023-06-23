@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 .main__container {
@@ -18,7 +19,6 @@ html {
 .menu {
     font-family: 'Bowlby One', cursive;
     position: fixed;
-    box-sizing: border-box;
     width: 100%;
     background: rgb(5, 0, 22);
     display: flex;
@@ -65,7 +65,6 @@ html {
 .menu__logo {
     color: black;
     height: 3rem;
-
 }
 
 .menu__header__ul {
@@ -81,11 +80,13 @@ html {
 /* Sección Principal*/
 
 .main {
-    height: 85vh;
-    box-sizing: border-box;
+    height: 100vh;
     width: 100%;
-    padding: 2% 0;
-    padding-top: 7em;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     font-family: 'Bowlby One', cursive;
     border-bottom: 1px solid rgb(29, 29, 29);
 }
@@ -93,39 +94,35 @@ html {
 .main__tittle {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_edwar {
     font-size: 9rem;
     color: rgb(228, 195, 11);
-    align-self: center;
-    margin-top: 1.5rem;
-    margin-bottom: -1rem;
 }
 
 .main_leon {
     background-color: rgb(228, 195, 11);
-    padding-top: 2.5rem;
     color: rgb(5, 0, 22);
     font-size: 12.2rem;
-    align-self: center;
 }
 
 .main_description {
     color: rgb(228, 195, 11);
-    font-size: 2.65rem;
-    align-self: center;
+    font-size: 2.3rem;
 }
 
 .main__div {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .main__subtittle {
     color: rgb(6, 157, 218);
     align-self: center;
-    margin-top: 2rem;
     font-size: 1.2rem;
 }
 
