@@ -244,38 +244,42 @@ html::-webkit-scrollbar:horizontal {
 /* Sección Skills */
 
 .skills__main {
-    height: auto;
-    box-sizing: border-box;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-bottom: 1px solid rgb(29, 29, 29);
-    padding-top: 7em;
 }
 
 .skills {
     background: rgb(83, 2, 63);
-    height: 300px;
     font-family: 'Quicksand', sans-serif;
-    display: grid;
-    grid-template-rows: 30% 1fr;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .skills__tittle {
     font-family: 'Bowlby One', cursive;
     font-size: 3rem;
     text-align: center;
-    height: auto;
+}
+
+.skills_countain {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .skills__animBox {
     height: 50px;
-    width: 300px;
-    align-items: center;
-    font-size: 50px;
+    font-size: 4rem;
     text-align: center;
     overflow: hidden;
     font-weight: 600;
