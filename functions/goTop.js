@@ -14,8 +14,6 @@ btnScrollTop.addEventListener('click', () => {
 
 window.onscroll = () => {
     addBtnScroll();
-    hideMenu();
-    showMenuPlegable();
     showUnderLineMenu()
 }
 
@@ -29,23 +27,8 @@ const addBtnScroll = () => {
 
 /* Función para mostrar el menú plegable */
 
-const showMenuPlegable = () => {
-    if (window.scrollY < 150) {
-        menuPlegable.classList.add('show')
-    } else {
-        menuPlegable.classList.remove('show')
-    }
-}
 
-/* Función para ocultar el menú */
 
-const hideMenu = () => {
-    if (window.scrollY < 150) {
-        menuOculto.classList.add('hide')
-    } else {
-        menuOculto.classList.remove('hide')
-    }
-}
 
 
 const showUnderLineMenu = () => {

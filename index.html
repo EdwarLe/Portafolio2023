@@ -49,13 +49,14 @@
                 </ul>
             </nav>
             <!-- Menú Pleglable -->
-            <div class="menu-pleg" id="menu_pleg">
-                <i class="icon-th"></i>
-            </div>
+
         </section>
+        <div class="menu-pleg" id="menu_pleg">
+            <i class="icon-th"></i>
+        </div>
 
         <!-- Header -->
-        <section class="main">
+        <section class="main" id="main__section">
             <div class="main__div">
                 <h1 class="main__tittle">
                     <span class="main_edwar">EDWAR</span>
@@ -264,7 +265,7 @@
         </section>
 
         <!-- Footer -->
-        <section class="footer">
+        <section class="footer" id="footer">
             <div>
                 <p>Desarrollado por Edwar León</p>
                 <p>edwar.leon.m@gmail.com</p>
@@ -275,28 +276,26 @@
     </div>
 
     <!-- Redes Sociales -->
-    <section>
-        <div class="menu__icon">
-            <nav>
-                <ul>
-                    <li class="line">
-                        <a href="https://github.com/EdwarLe" target="_blank">
-                            <i class="fa-brands fa-github icon"></i>
-                        </a>
-                    </li>
-                    <li class="line">
-                        <a href="https://linkedin.com/in/edwar-leon-54093964/" target="_blank">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                        </a>
-                    </li>
-                    <li class="line">
-                        <a href="https://instagram.com/edwar_leon?igshid=YmMyMTA2M2Y=" target="_blank">
-                            <i class="fa-brands fa-instagram icon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <section class="menu__icon hide" id="icon__menu">
+        <nav>
+            <ul class="icon__contain">
+                <li class="line">
+                    <a href="https://github.com/EdwarLe" target="_blank">
+                        <i class="fa-brands fa-github icon"></i>
+                    </a>
+                </li>
+                <li class="line">
+                    <a href="https://linkedin.com/in/edwar-leon-54093964/" target="_blank">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                    </a>
+                </li>
+                <li class="line">
+                    <a href="https://instagram.com/edwar_leon?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <i class="fa-brands fa-instagram icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </section>
 
     <!-- pantalla de carga -->
@@ -308,7 +307,9 @@
         </div>
     </section>
 
-    <script src="goTop.js"></script>
+    <script src="./functions/goTop.js"></script>
+    <script src="./functions/select-pages.js"></script>
+    <script src="./functions/menu-desplegable.js"></script>
 </body>
 
 </html>
