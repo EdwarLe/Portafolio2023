@@ -183,6 +183,7 @@ html::-webkit-scrollbar-thumb {
 
 .about__h3 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .container__about {
@@ -660,6 +661,47 @@ html::-webkit-scrollbar-thumb {
   .icon__contain a {
     color: rgb(5, 0, 22);
   }
+
+  .container__about {
+    flex-direction: column;
+    height: 50%;
+  }
+
+  .about__img img {
+    height: 10rem;
+  }
+
+  .about__info {
+    width: 100%;
+    height: 300px;
+  }
+
+  .about__text {
+    height: 80%;
+  }
+
+
+
+  .estudios__tittle__main, .experiencia__tittle {
+    text-align: center;
+  }
+
+  .proyect {
+    flex-basis: 70%;
+  }
+
+  .container__about {
+    flex-direction: column;
+  }
+
+  .about {
+    max-height: 100vh;
+  }
+
+  .about__div {
+    max-height: 100%;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -678,11 +720,6 @@ html::-webkit-scrollbar-thumb {
     margin-top: 0.5rem;
   }
 
-  .container__about {
-    flex-direction: column;
-  }
-
-  .about__img img {
-    height: 10rem;
-  }
+  
+  
 }
