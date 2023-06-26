@@ -80,6 +80,7 @@ html::-webkit-scrollbar-thumb {
 
 .menu__header__logo {
   display: flex;
+  text-align: center;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
