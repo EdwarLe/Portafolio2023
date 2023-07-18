@@ -239,16 +239,13 @@ html::-webkit-scrollbar-thumb {
   width: 0.5rem;
 }
 
+
 .about__text p {
   width: 100%;
   text-align: justify;
 }
-.about__p2,
-.about__p3,
-.about__p4,
-.about__p5,
-.about__p6 {
-  transform: translateX(110%);
+.about__hiden{
+  /* transform: translateX(110%); */
   display: none;
 }
 
@@ -258,6 +255,11 @@ html::-webkit-scrollbar-thumb {
   padding: 0.5rem;
 }
 
+
+.about__show {
+  /* transform: translateX(0); */
+  display: block;
+}
 .num__select {
   display: flex;
   justify-content: center;
