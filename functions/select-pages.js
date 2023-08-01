@@ -1,14 +1,19 @@
-const numSelect = document.querySelectorAll(".num__select > p");
+const numSelect = document.querySelectorAll(".num");
 const aboutP = document.querySelectorAll(".about__p");
 
-for (let i = 0; i < numSelect.length; i++) {
-    let count;
-  numSelect[i].addEventListener("click", function () {
-    let numValue = parseInt(numSelect[i].textContent);
-    if(numValue === i + 1) {
-        count = numValue
-    }
-    
+numSelect.forEach((num) => {
+  num.addEventListener("click", () => {
+    numSelect.forEach((numItem) => {
+      numItem.classList.remove("select");
+      aboutP.forEach((text) => {
+        text.classList.add("about__hiden");
+      });
+    });
+    num.classList.add("select");
+    aboutP.forEach((text) => {
+      if (num.classList.contains("select")) {
+        text.classList.remove("about__hiden");
+      }
+    });
   });
-
-}
+});
